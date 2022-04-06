@@ -2,7 +2,7 @@ import { useState } from "react";
 import InputField from "./InputField";
 import form from "../data/formFields.json";
 
-export default function ModalForm({ modal, setModal, list, setList }) {
+export default function ModalForm({ setModal, list, setList }) {
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
 

@@ -1,3 +1,4 @@
+import ButtonToggle from "../components/ButtonToggle";
 import TaskList from "../components/TaskList";
 import Sorter from "../components/Sorter";
 import ModalForm from "../components/ModalForm";
@@ -8,7 +9,6 @@ export default function ShoppingScreen({ setModal, list, setList }) {
 
   const completedItems = list.filter((item) => item.isCompleted === true);
   const pendingItems = list.filter((item) => item.isCompleted === false);
-  const toggleLabel = showCompleted ? "Hide" : "View";
 
   function editList(editedItem) {
     const clonedList = [...list];
@@ -31,9 +31,10 @@ export default function ShoppingScreen({ setModal, list, setList }) {
       >
         Add Item
       </button>
-      <button onClick={() => setShowCompleted(!showCompleted)}>
-        {toggleLabel} completed items
-      </button>
+      <ButtonToggle
+        showCompleted={showCompleted}
+        onClick={() => setShowCompleted(!showCompleted)}
+      />
       {showCompleted && <TaskList list={completedItems} editList={editList} />}
     </section>
   );

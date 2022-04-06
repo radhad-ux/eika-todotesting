@@ -16,3 +16,4 @@ export default function Modal({ modalState }) {
     document.getElementById("portal")
   );
 }
+
