@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 //Project files
-import ModalForm from "./components/ModalForm";
+import Modal from "./components/Modal";
 import WelcomeScreen from "./screens/WelcomeScreen";
 import ShoppingScreen from "./screens/ShoppingScreen";
 // import "./css/style.css";
@@ -10,7 +10,7 @@ import ShoppingScreen from "./screens/ShoppingScreen";
 export default function App() {
   // Local state
   const [list, setList] = useState([]);
-  const [showModal, setShowModal] = useState(false);
+  const [modal, setModal] = useState(null);
   const storageKey = "todo-list";
 
   // Methods
@@ -30,19 +30,13 @@ export default function App() {
       {/* <header>
         <img src={logo} className="logo" alt="company logo" />
       </header> */}
-      {list.length === 0 && <WelcomeScreen setShowModal={setShowModal} />}
-      {list.length > 0 && (
-        <ShoppingScreen
-          setShowModal={setShowModal}
-          list={list}
-          setList={setList}
-        />
+      {list.length === 0 && (
+        <WelcomeScreen list={list} setList={setList} setModal={setModal} />
       )}
-      <ModalForm
-        modalState={[showModal, setShowModal]}
-        list={list}
-        setList={setList}
-      />
+      {list.length > 0 && (
+        <ShoppingScreen setModal={setModal} list={list} setList={setList} />
+      )}
+      <Modal modalState={[modal, setModal]} list={list} setList={setList} />
     </div>
   );
 }

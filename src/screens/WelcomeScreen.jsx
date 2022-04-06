@@ -1,4 +1,5 @@
-export default function WelcomeScreen({ setShowModal }) {
+import ModalForm from "../components/ModalForm";
+export default function WelcomeScreen({ setModal, list, setList }) {
   return (
     <section className="welcome">
       <img src="" alt="hero-img" className="hero-media" />
@@ -11,7 +12,15 @@ export default function WelcomeScreen({ setShowModal }) {
         </h4>
         <h3>Thank you for shopping with us ...</h3>
       </div>
-      <button onClick={() => setShowModal(true)}>Add Item</button>
+      <button
+        onClick={() =>
+          setModal(
+            <ModalForm setModal={setModal} list={list} setList={setList} />
+          )
+        }
+      >
+        Add Item
+      </button>
     </section>
   );
 }
