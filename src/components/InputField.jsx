@@ -1,7 +1,7 @@
 export default function InputField({ settings, state }) {
   // safeguard
-//   if (settings === undefined) throw new Error("The setting prop is missing");
-//   if (state === undefined) throw new Error("The state prop is missing");
+  if (settings === undefined) throw new Error("The setting prop is missing");
+  if (state === undefined) throw new Error("The state prop is missing");
 
   const { label, type, placeholder, required, autoFocus } = settings;
   const [getter, setter] = state;

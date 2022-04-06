@@ -2,8 +2,7 @@ import { useState } from "react";
 import InputField from "./InputField";
 import form from "../data/formFields.json";
 
-export default function ModalForm({ modalState, list, setList }) {
-  const [showModal, setShowModal] = modalState;
+export default function ModalForm({ modal, setModal, list, setList }) {
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
 
@@ -26,10 +25,8 @@ export default function ModalForm({ modalState, list, setList }) {
   function resetForm() {
     setName("");
     setPrice("");
-    setShowModal(false);
+    setModal(null);
   }
-
-  if (showModal === false) return null;
 
   return (
     <form onSubmit={(event) => onSubmit(event)}>
