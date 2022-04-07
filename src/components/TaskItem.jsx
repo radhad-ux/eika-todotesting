@@ -5,7 +5,6 @@ export default function TaskItem({ item, editList }) {
 
   function onCheck() {
     const clonedItem = { ...item };
-
     clonedItem.isCompleted = !clonedItem.isCompleted;
     editList(clonedItem);
   }
