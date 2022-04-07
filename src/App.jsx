@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import Modal from "./components/Modal";
 import WelcomeScreen from "./screens/WelcomeScreen";
 import ShoppingScreen from "./screens/ShoppingScreen";
-// import "./css/style.css";
-// import logo from "./img/mainlogo.jpg";
+import "./styles/style.css";
+import Logo from "./assets/mainlogo.jpg";
 
 export default function App() {
   // Local state
@@ -27,9 +27,9 @@ export default function App() {
 
   return (
     <div className="App">
-      {/* <header>
-        <img src={logo} className="logo" alt="company logo" />
-      </header> */}
+      <header className="header">
+        <img src={Logo} className="logo" alt="company logo" />
+      </header>
       {list.length === 0 && (
         <WelcomeScreen list={list} setList={setList} setModal={setModal} />
       )}

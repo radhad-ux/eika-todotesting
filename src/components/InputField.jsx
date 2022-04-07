@@ -7,7 +7,7 @@ export default function InputField({ settings, state }) {
   const [getter, setter] = state;
 
   return (
-    <label>
+    <label className="input_field">
       {label}
       <input
         type={type}

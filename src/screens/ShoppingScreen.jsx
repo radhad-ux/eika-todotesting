@@ -18,23 +18,26 @@ export default function ShoppingScreen({ setModal, list, setList }) {
   }
 
   return (
-    <section className="listscreen">
-      <h2>Your Shopping list</h2>
+    <section className="shopping_screen">
+      <h1>Your Shopping list</h1>
       <Sorter list={list} setList={setList} />
       <TaskList list={pendingItems} editList={editList} />
-      <button
-        onClick={() =>
-          setModal(
-            <ModalForm setModal={setModal} list={list} setList={setList} />
-          )
-        }
-      >
-        Add Item
-      </button>
-      <ButtonToggle
-        showCompleted={showCompleted}
-        onClick={() => setShowCompleted(!showCompleted)}
-      />
+      <div className="button_main">
+        <button
+          className="button_primary"
+          onClick={() =>
+            setModal(
+              <ModalForm setModal={setModal} list={list} setList={setList} />
+            )
+          }
+        >
+          Add Item
+        </button>
+        <ButtonToggle
+          showCompleted={showCompleted}
+          onClick={() => setShowCompleted(!showCompleted)}
+        />
+      </div>
       {showCompleted && <TaskList list={completedItems} editList={editList} />}
     </section>
   );

@@ -7,5 +7,5 @@ export default function TaskList({ list, editList }) {
 
   if (list.length === 0) return <p>No pending items to show</p>;
 
-  return <ul>{TaskItems}</ul>;
+  return <ul className="task_list">{TaskItems}</ul>;
 }

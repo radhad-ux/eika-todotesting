@@ -1,0 +1,51 @@
+button {
+  height: 40px;
+  background: none;
+  border: none;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+.button_primary {
+  width: 200px;
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  border-radius: 100px;
+}
+
+.button_primary:hover {
+  text-decoration: none;
+  background-color: #f5d20a;
+}
+
+.button_secondary {
+  width: 200px;
+}
+
+.button_icon {
+  min-width: 200px;
+}
+
+.button_icon img {
+  margin-right: 5px;
+}
+
+/* Media queries */
+@media (min-width: 550px) {
+  .button_icon {
+    min-width: 320px;
+  }
+}
+
+@media (min-width: 550px) {
+  button {
+    height: 54px;
+  }
+}
+@media (min-width: 550px) {
+  .button-primary {
+    width: 320px;
+  }
+}
