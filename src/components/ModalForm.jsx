@@ -29,12 +29,14 @@ export default function ModalForm({ setModal, list, setList }) {
   }
 
   return (
-    <form onSubmit={(event) => onSubmit(event)}>
+    <form className="modal_form" onSubmit={(event) => onSubmit(event)}>
       <h2>Create new item</h2>
       <InputField settings={form.name} state={[name, setName]} />
       <InputField settings={form.price} state={[price, setPrice]} />
-      <button>Submit</button>
-      <button onClick={resetForm}>Cancel</button>
+      <button className="button_primary">Submit</button>
+      <button className="button_secondary" onClick={resetForm}>
+        Cancel
+      </button>
     </form>
   );
 }
