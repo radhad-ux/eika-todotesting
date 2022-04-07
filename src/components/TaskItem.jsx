@@ -10,13 +10,6 @@ export default function TaskItem({ item, editList }) {
     editList(clonedItem);
   }
 
-  // function editItem(key, editedValue){
-  //   const editedItem = {...item};
-
-  //   editedItem[key] = editedValue;
-  //   editList(editedItem);
-  // }
-
   return (
     <article className={`task_item ${isCompleted && "completed"}`}>
       <Checkbox checked={isCompleted} onChange={onCheck} />

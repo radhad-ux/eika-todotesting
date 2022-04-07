@@ -1,3 +1,4 @@
+//To test the scenarios when checked is set to true or false
 export default function InputCheckbox({ checked, onChange }) {
   return (
     <label className="input_checkbox">
