@@ -19,7 +19,6 @@ test("Input field works with the correct settings and state props", () => {
   const labelElement = screen.queryByText(/product name/i);
 
   //Assert
-  screen.debug();
   expect(labelElement).toBeInTheDocument();
 });
 

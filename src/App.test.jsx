@@ -29,7 +29,7 @@ test("Expected to go to the Shopping screen if the list is not empty", () => {
 
   //Act
   const titleElement = screen.queryByText(/your shopping list/i);
-  screen.debug();
+
   //Assert
   expect(titleElement).toBeInTheDocument();
 });
