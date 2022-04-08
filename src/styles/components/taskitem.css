@@ -25,3 +25,10 @@
 .task_item.completed .price {
   color: var(--color-foreground);
 }
+
+@media (min-width: 550px) {
+  .task_item {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
