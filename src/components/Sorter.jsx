@@ -15,6 +15,7 @@ export default function Sorter({ list, setList }) {
     setList(clonedList);
   }
 
+  //Test cases to trigger sortByName and sortByPrice functions can be considered
   return (
     <section className="sorter">
       Sort by:

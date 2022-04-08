@@ -1,8 +1,9 @@
-import ButtonToggle from "../components/ButtonToggle";
-import TaskList from "../components/TaskList";
-import Sorter from "../components/Sorter";
-import ModalForm from "../components/ModalForm";
 import { useState } from "react";
+
+import ButtonToggle from "../components/ButtonToggle";
+import ModalForm from "../components/ModalForm";
+import Sorter from "../components/Sorter";
+import TaskList from "../components/TaskList";
 
 export default function ShoppingScreen({ setModal, list, setList }) {
   const [showCompleted, setShowCompleted] = useState(false);

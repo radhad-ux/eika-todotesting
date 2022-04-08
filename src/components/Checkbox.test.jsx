@@ -7,7 +7,7 @@ test("Expected checkbox to be checked when is set to true", () => {
   const fakeCheck = true;
   const toggleMethod = jest.fn();
   render(<CheckBox checked={fakeCheck} onChange={toggleMethod} />);
-  
+
   //Act
   const checkBox = screen.getByTestId("checkbox");
 

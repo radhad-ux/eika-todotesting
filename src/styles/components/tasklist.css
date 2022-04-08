@@ -7,7 +7,3 @@
 .task_list .task_item {
   margin-bottom: var(--space-medium);
 }
-
-.text {
-  margin: 0 auto;
-}
