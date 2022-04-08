@@ -2,7 +2,7 @@
 
 The EIKA shopping list app is a React.js single page web application which allows users to keep track of things they wish to buy at the EIKA store. This project mainly concerns with unit testing using jest.
 
-It is hosted on: [Eika - TodoTesting]()
+It is hosted on: [Eika - TodoTesting](https://eika-todotesting.web.app)
 
 ---
 
