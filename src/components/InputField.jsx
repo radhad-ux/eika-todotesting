@@ -1,4 +1,5 @@
 export default function InputField({ settings, state, validation }) {
+
   // safeguard
   if (settings === undefined) throw new Error("The setting prop is missing");
   if (state === undefined) throw new Error("The state prop is missing");
@@ -7,6 +8,7 @@ export default function InputField({ settings, state, validation }) {
   const [getter, setter] = state;
 
   function onValidate(callback, setState) {
+    
     // Safeguard
     if (callback === undefined) return;
     const result = callback(getter);
