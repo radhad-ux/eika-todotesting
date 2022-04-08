@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+## **Eika - TodoTesting**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The EIKA shopping list app is a React.js single page web application which allows users to keep track of things they wish to buy at the EIKA store. This project mainly concerns with unit testing using jest.
 
-## Available Scripts
+It is hosted on: [Eika - TodoTesting]()
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Pre-requisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You need to have the following installed before you can install and run this project:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [Node.js](https://nodejs.org/en/download/)
+- An IDE (Integrated development environment), e.g. [Visual Studio Code](https://code.visualstudio.com/download)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone this repository: git clone https://github.com/radhad-ux/package-tracker-react.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install the dependencies by running npm install in the project directory
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Run the app in the development mode. In the project directory, run: npm start
 
-### `npm run eject`
+4. Open http://localhost:3000 to view it in the browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. To run the project in the production mode, use this command npm run build.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Google Spreadsheet
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[Link](https://docs.google.com/spreadsheets/d/1TnabJTNTWB9cX0MKWT6-lB7QsWHfdf1tE8JySEmN2Hw/edit?usp=sharing)
 
-## Learn More
+## Component Hierarchy
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[UI Component Tree](https://whimsical.com/eika-todotesting-WPpeLcmpAxsFGBfmwHfGzT)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Design Mockup
 
-### Code Splitting
+[Figma Link](https://www.figma.com/file/NOFPZZozNTsPNJW0IyYE6J/eika-TDD?node-id=1:181)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
