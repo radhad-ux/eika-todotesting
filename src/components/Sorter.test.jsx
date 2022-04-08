@@ -4,6 +4,7 @@ import Sorter from "./Sorter";
 
 test("Expected to have the text name for sorting", () => {
   //Arrange
+
   render(<Sorter />);
 
   //Act

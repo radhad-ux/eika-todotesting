@@ -5,10 +5,8 @@
 
 .input_checkbox,
 .input_checkbox .icon_checkmark {
-  --size: 38px;
-
-  width: var(--size);
-  height: var(--size);
+  width: 35px;
+  height: 35px;
 }
 
 .input_checkbox input[type="checkbox"] {
@@ -23,7 +21,6 @@
 
 .input_checkbox .icon_checkmark.checked {
   background-color: var(--color-primary);
-  /* background-image: url("../../assets/checkmark-white.png"); */
   background-position: center;
   background-repeat: no-repeat;
 }

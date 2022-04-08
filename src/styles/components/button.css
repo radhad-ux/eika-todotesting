@@ -30,20 +30,22 @@ button:hover {
 
 .button_icon img {
   margin-right: 5px;
+  height: 15px;
+  width: 15px;
 }
 
 /* Media queries */
+@media (min-width: 550px) {
+  button {
+    height: 54px;
+  }
+}
 @media (min-width: 550px) {
   .button_icon {
     min-width: 320px;
   }
 }
 
-@media (min-width: 550px) {
-  button {
-    height: 54px;
-  }
-}
 @media (min-width: 550px) {
   .button-primary {
     width: 320px;
