@@ -1,9 +1,14 @@
 import OpenEye from "../assets/eye.png";
 import CloseEye from "../assets/eye-slash.png";
 
-// To implement test scenario when showCompleted items is set to true or false
+
+//Testcase 1: View Completed Items when showCompleted is set to false
+//Testcase 2: Hide Completed Items when showCompleted is set to true
+
+
 export default function ButtonToggle({ showCompleted, onClick }) {
   const EyeImage = showCompleted ? CloseEye : OpenEye;
+
   return (
     <button className="button_icon" onClick={onClick}>
       <img src={EyeImage} alt="Eye" className="icon" />
